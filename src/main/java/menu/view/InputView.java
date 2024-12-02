@@ -11,7 +11,7 @@ public class InputView {
         return Arrays.asList(input);
     }
 
-    public static List<String> inputCantNotEatingMenus() {
+    public static List<String> inputCantEatingMenus() {
         String[] input = getInput();
         return Arrays.asList(input);
     }
