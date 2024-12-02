@@ -11,7 +11,7 @@ public class CantEatingMenus {
     public CantEatingMenus(List<String> cantEatingMenus) {
         validateMenusLength(cantEatingMenus);
         validateIsMenuExist(cantEatingMenus);
-        this.cantEatingMenus = getCantEatingMenus(cantEatingMenus);
+        this.cantEatingMenus = cantEatingMenus(cantEatingMenus);
     }
 
     private void validateMenusLength(List<String> cantEatingMenus) {
@@ -26,7 +26,11 @@ public class CantEatingMenus {
        }
     }
 
-    private List<Menu> getCantEatingMenus(List<String> cantEatingMenus) {
+    public List<Menu> getCantEatingMenus() {
+        return cantEatingMenus;
+    }
+
+    private List<Menu> cantEatingMenus(List<String> cantEatingMenus) {
         return cantEatingMenus.stream()
             .map(Menu::new)
             .collect(Collectors.toList());

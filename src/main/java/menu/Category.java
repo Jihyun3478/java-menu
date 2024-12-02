@@ -33,7 +33,11 @@ public enum Category {
         return Category.values()[randomIndex];
     }
 
-    public static List<String> getMenuByCategory(Category category) {
+    public static List<String> getMenusByCategory(Category category) {
         return category.menus;
+    }
+
+    public static String getMenu(List<String> menus) {
+        return Randoms.shuffle(menus).get(0);
     }
 }

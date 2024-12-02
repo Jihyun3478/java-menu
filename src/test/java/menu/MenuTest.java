@@ -13,7 +13,7 @@ public class MenuTest {
     void 각_코치가_월요일에_먹을_메뉴를_추천한다() {
         Category category = Category.randomCategory();
 
-        List<String> menus = Category.getMenuByCategory(category);
+        List<String> menus = Category.getMenusByCategory(category);
         String randomMenu = Randoms.shuffle(menus).get(0);
         Menu menu = new Menu(randomMenu);
 
