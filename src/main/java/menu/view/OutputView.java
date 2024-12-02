@@ -15,7 +15,7 @@ public class OutputView {
     }
 
     public static void inputCantEatingMenus(String coachName) {
-        System.out.printf("\n%s(이)가 못 먹는 메뉴를 입력해 주세요.", coachName);
+        System.out.printf("\n%s(이)가 못 먹는 메뉴를 입력해 주세요.\n", coachName);
     }
 
     public static void printDayAndCategory(List<Category> categories) {
@@ -37,7 +37,7 @@ public class OutputView {
     }
 
     public static void finish() {
-        System.out.println("\n\n추천을 완료했습니다.");
+        System.out.print("\n\n추천을 완료했습니다.");
     }
 
     public static void printErrorMessage(IllegalArgumentException e) {

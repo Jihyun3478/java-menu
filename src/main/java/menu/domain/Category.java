@@ -29,7 +29,7 @@ public enum Category {
     }
 
     public static Category randomCategory() {
-        int randomIndex = Randoms.pickNumberInRange(1, 5);
+        int randomIndex = Randoms.pickNumberInRange(0, 4);
         return Category.values()[randomIndex];
     }
 
