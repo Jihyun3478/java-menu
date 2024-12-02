@@ -58,7 +58,7 @@ BUILD SUCCESSFUL in 0s
 
 과제 시작 시간: 14:30  <br>
 TDD 종료 : 17:17 (2시간 47분) <br>
-MVP 완성 : : (TDD + 분) <br>
+MVP 완성 : 19:13 (TDD + 1시간 56분) <br>
 리팩토링 종료 : : (MVP 완성 + 분) <br>
 총 시간 분
 
