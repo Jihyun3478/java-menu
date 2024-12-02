@@ -57,7 +57,7 @@ BUILD SUCCESSFUL in 0s
   - [ ] `Exception`이 아닌 `IllegalArgumentException`, `IllegalStateException` 등과 같은 명확한 유형을 처리한다.
 
 과제 시작 시간: 14:30  <br>
-TDD 종료 : : (시간 분) <br>
+TDD 종료 : 17:17 (2시간 47분) <br>
 MVP 완성 : : (TDD + 분) <br>
 리팩토링 종료 : : (MVP 완성 + 분) <br>
 총 시간 분
