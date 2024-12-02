@@ -41,6 +41,6 @@ public class OutputView {
     }
 
     public static void printErrorMessage(IllegalArgumentException e) {
-        System.out.println(e.getMessage() + " 다시 입력해주세요.");
+        System.out.println(e.getMessage());
     }
 }

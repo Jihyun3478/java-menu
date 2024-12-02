@@ -1,5 +1,7 @@
 package menu.domain;
 
+import static menu.exception.ErrorMessage.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -14,7 +16,7 @@ public class Coaches {
 
     private void validateCoachesCount(List<String> coachNames) {
         if(!(coachNames.size() >= 2 && coachNames.size() <= 5)) {
-            throw new IllegalArgumentException("[ERROR] 코치는 최소 2명, 최대 5명여야 합니다.");
+            throw new IllegalArgumentException(INVALID_COACHES_COUNT.getMessage());
         }
     }
 
