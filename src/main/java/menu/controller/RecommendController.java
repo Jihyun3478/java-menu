@@ -3,10 +3,10 @@ package menu.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import menu.CantEatingMenus;
-import menu.Category;
-import menu.Coaches;
-import menu.Menu;
+import menu.domain.CantEatingMenus;
+import menu.domain.Category;
+import menu.domain.Coaches;
+import menu.domain.Menu;
 import menu.util.GenerateCategory;
 import menu.util.GenerateMenus;
 import menu.view.InputView;

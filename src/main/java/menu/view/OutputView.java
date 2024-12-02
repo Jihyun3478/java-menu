@@ -2,8 +2,8 @@ package menu.view;
 
 import java.util.List;
 
-import menu.Category;
-import menu.Menu;
+import menu.domain.Category;
+import menu.domain.Menu;
 
 public class OutputView {
     public static void start() {

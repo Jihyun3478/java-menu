@@ -1,4 +1,4 @@
-package menu;
+package menu.domain;
 
 public class Menu {
     private final String menuName;

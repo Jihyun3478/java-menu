@@ -3,9 +3,9 @@ package menu.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import menu.CantEatingMenus;
-import menu.Category;
-import menu.Menu;
+import menu.domain.CantEatingMenus;
+import menu.domain.Category;
+import menu.domain.Menu;
 
 public class GenerateMenus {
     public static List<Menu> generate(List<Category> categories, CantEatingMenus cantEatingMenus) {

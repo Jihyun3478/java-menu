@@ -1,4 +1,4 @@
-package menu;
+package menu.util;
 
 import static org.assertj.core.api.AssertionsForClassTypes.*;
 
@@ -7,8 +7,9 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import menu.util.GenerateCategory;
-import menu.util.GenerateMenus;
+import menu.domain.CantEatingMenus;
+import menu.domain.Category;
+import menu.domain.Menu;
 
 public class GenerateMenusTest {
     @Test
