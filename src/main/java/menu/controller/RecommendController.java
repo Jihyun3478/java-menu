@@ -18,7 +18,17 @@ public class RecommendController {
 
     public void start() {
         OutputView.start();
+        execute();
+        OutputView.finish();
+    }
 
+    private void execute() {
+        List<String> inputCoachNames = getCoachNames();
+        getCantEatingMenus(inputCoachNames);
+        getResult(inputCoachNames);
+    }
+
+    private List<String> getCoachNames() {
         List<String> inputCoachNames = new ArrayList<>();
 
         while (true) {
@@ -31,7 +41,10 @@ public class RecommendController {
                 OutputView.printErrorMessage(e);
             }
         }
+        return inputCoachNames;
+    }
 
+    private void getCantEatingMenus(List<String> inputCoachNames) {
         for (int index = 0; index < inputCoachNames.size(); index++) {
             while (true) {
                 try {
@@ -44,15 +57,19 @@ public class RecommendController {
                 }
             }
         }
+    }
 
+    private static List<Category> getCategories() {
         List<Category> categories = GenerateCategory.generate();
         OutputView.printDayAndCategory(categories);
+        return categories;
+    }
 
+    private void getResult(List<String> inputCoachNames) {
+        List<Category> categories = getCategories();
         for (int index = 0; index < inputCoachNames.size(); index++) {
             List<Menu> menus = GenerateMenus.generate(categories, cantEatingMenus);
             OutputView.printResult(coaches.getCoachName(index), menus);
         }
-
-        OutputView.finish();
     }
 }
