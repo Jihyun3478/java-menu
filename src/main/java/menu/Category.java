@@ -26,6 +26,10 @@ public enum Category {
 
     public static Category randomCategory() {
         int randomIndex = Randoms.pickNumberInRange(1, 5);
-        return menu.Category.values()[randomIndex];
+        return Category.values()[randomIndex];
+    }
+
+    public static List<String> getMenuByCategory(Category category) {
+        return category.menus;
     }
 }
