@@ -16,13 +16,13 @@ public class CantEatingMenus {
 
     private void validateMenusLength(List<String> cantEatingMenus) {
         if(!(cantEatingMenus.size() <= 2)) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("[ERROR] 못 먹는 메뉴는 최소 0개, 최대 2개여야 합니다.");
         }
     }
 
     private void validateIsMenuExist(List<String> cantEatingMenus) {
        if(!isMenuExist(cantEatingMenus)) {
-           throw new IllegalArgumentException();
+           throw new IllegalArgumentException("[ERROR] 존재하지 않는 메뉴입니다.");
        }
     }
 
