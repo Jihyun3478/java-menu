@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CantEatingMenus {
+    private static final int MAXIMUM_MENUS_LENGTH = 2;
+
     private List<Menu> cantEatingMenus = new ArrayList<>();
 
     public CantEatingMenus(List<String> cantEatingMenus) {
@@ -17,7 +19,7 @@ public class CantEatingMenus {
     }
 
     private void validateMenusLength(List<String> cantEatingMenus) {
-        if(!(cantEatingMenus.size() <= 2)) {
+        if(!(cantEatingMenus.size() <= MAXIMUM_MENUS_LENGTH)) {
             throw new IllegalArgumentException(INVALID_MENU_COUNT.getMessage());
         }
     }

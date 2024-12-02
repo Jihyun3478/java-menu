@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Coaches {
+    private static final int MINIMUM_COACH_COUNT = 2;
+    private static final int MAXIMUM_COACH_COUNT = 5;
+
     private List<Coach> coaches = new ArrayList<>();
 
     public Coaches(List<String> coachNames) {
@@ -15,7 +18,7 @@ public class Coaches {
     }
 
     private void validateCoachesCount(List<String> coachNames) {
-        if(!(coachNames.size() >= 2 && coachNames.size() <= 5)) {
+        if(!(coachNames.size() >= MINIMUM_COACH_COUNT && coachNames.size() <= MAXIMUM_COACH_COUNT)) {
             throw new IllegalArgumentException(INVALID_COACHES_COUNT.getMessage());
         }
     }
